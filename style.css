@@ -1,0 +1,68 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Container styles */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #2c3e50;
+}
+
+/* Chapter styles */
+.chapter {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chapter h2 {
+  color: #2980b9;
+  margin-bottom: 15px;
+}
+
+.chapter p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.chapter ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.chapter ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.chapter ul li strong {
+  color: #2c3e50;
+}
+
+/* Make chapters look distinct with some spacing */
+.chapter + .chapter {
+  margin-top: 30px;
+}
