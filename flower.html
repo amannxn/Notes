@@ -1,114 +1,109 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 
-<title>yelo babeyy😍🤭🌸</title>
-
-<link rel="stylesheet" href="style.css">
+<title>I Knew It ❤️</title>
 
 <style>
 
-
 body{
 
-background:#111;
-
+margin:0;
+height:100vh;
 overflow:hidden;
+background:linear-gradient(#ffc1d6,#fff);
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
 
 }
 
+
+/* floating flowers */
 
 .flower{
 
+position:absolute;
+font-size:40px;
+animation:float 6s infinite ease-in-out;
+
+}
+
+
+@keyframes float{
+
+0%{
+transform:translateY(100vh) rotate(0deg);
+opacity:0;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-20vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+
+
+/* centre cat */
+
+.cat{
+
+font-size:130px;
 position:relative;
+z-index:5;
 
-width:100px;
-
-height:100px;
-
-margin:auto;
-
-top:150px;
-
-animation:bloom 3s infinite alternate;
+animation:bounce 2s infinite alternate;
 
 }
 
 
-
-.petal{
-
-position:absolute;
-
-width:80px;
-
-height:80px;
-
-background:pink;
-
-border-radius:50%;
-
-}
-
-
-
-.p1{left:0;top:0;}
-.p2{right:0;top:0;}
-.p3{left:0;bottom:0;}
-.p4{right:0;bottom:0;}
-
-
-.center{
-
-position:absolute;
-
-width:60px;
-height:60px;
-
-background:yellow;
-
-border-radius:50%;
-
-left:20px;
-top:20px;
-
-}
-
-
-
-@keyframes bloom{
-
+@keyframes bounce{
 
 from{
-
-transform:scale(0.3) rotate(0deg);
-
+transform:translateY(0);
 }
-
 
 to{
-
-transform:scale(1.5) rotate(360deg);
+transform:translateY(-15px);
+}
 
 }
 
 
+
+/* note */
+
+.note{
+
+position:absolute;
+
+top:55px;
+left:50%;
+
+transform:translateX(-50%);
+
+background:white;
+
+padding:20px 30px;
+
+border-radius:20px;
+
+font-size:22px;
+
+box-shadow:0 0 20px pink;
+
+font-weight:bold;
+
 }
 
-
-h1{
-
-text-align:center;
-
-color:white;
-
-margin-top:250px;
-
-font-size:40px;
-
-}
 
 </style>
 
@@ -119,20 +114,60 @@ font-size:40px;
 <body>
 
 
-<h1>nice cleavage hai apca 😍 bad nazar wale boiz se dur raho😡</h1>
+<div class="note">
 
-
-<div class="flower">
-
-<div class="petal p1"></div>
-<div class="petal p2"></div>
-<div class="petal p3"></div>
-<div class="petal p4"></div>
-
-<div class="center"></div>
-
+HI CUTIE ❤️<br>
+I LIKE YOU TOO 🌸
 
 </div>
+
+
+
+<div class="cat">
+
+🐱<br>
+
+💌
+
+</div>
+
+
+
+<script>
+
+
+let flowers=["🌸","🌹","🌷","🌺","🌻"];
+
+
+for(let i=0;i<50;i++){
+
+
+let f=document.createElement("div");
+
+f.className="flower";
+
+
+f.innerHTML=flowers[Math.floor(Math.random()*flowers.length)];
+
+
+f.style.left=Math.random()*100+"vw";
+
+
+f.style.animationDelay=Math.random()*5+"s";
+
+
+f.style.fontSize=(20+Math.random()*40)+"px";
+
+
+document.body.appendChild(f);
+
+
+}
+
+
+
+</script>
+
 
 
 </body>
