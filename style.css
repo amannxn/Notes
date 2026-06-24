@@ -1,68 +1,54 @@
-/* General reset for margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:Arial;
 }
 
-/* Body styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  line-height: 1.6;
+
+.box{
+
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 0 30px pink;
+
 }
 
-/* Container styles */
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
+
+h1{
+    color:#ff4d6d;
 }
 
-/* Header styles */
-header {
-  text-align: center;
-  margin-bottom: 30px;
+
+button{
+
+    padding:15px 30px;
+    margin:15px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+
 }
 
-header h1 {
-  color: #2c3e50;
+
+button:first-of-type{
+
+    background:#ff4d6d;
+    color:white;
+
 }
 
-/* Chapter styles */
-.chapter {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-.chapter h2 {
-  color: #2980b9;
-  margin-bottom: 15px;
-}
+#noBtn{
 
-.chapter p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
+    background:black;
+    color:white;
+    position:relative;
 
-.chapter ul {
-  list-style-type: none;
-  margin-left: 20px;
-}
-
-.chapter ul li {
-  margin-bottom: 8px;
-  font-size: 15px;
-}
-
-.chapter ul li strong {
-  color: #2c3e50;
-}
-
-/* Make chapters look distinct with some spacing */
-.chapter + .chapter {
-  margin-top: 30px;
 }
